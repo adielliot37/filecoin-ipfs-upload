@@ -6,7 +6,7 @@ export default function App() {
     const [imageURI, setImageURI] = useState("")
     const [isUploading, setIsUploading] = useState(false)
     const [cid, setCid] = useState("")
-    const client = new Web3Storage({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweEU0NjhDOTU2ZTM4MjQyMDlhMzdCNkVlZDZkQjExMTE4YzE3ZGQ0MzMiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2Nzk1MDU0NDc0NjAsIm5hbWUiOiJ1cGxvYWQifQ.XH3sRMYQyZMrJKoTba4xxJI5K-8zJvkCAuqRWuGtOBg" })
+    const client = new Web3Storage({ token: "tokenapi" })
     const handleFileChange = (e) => {
         e.preventDefault()
         if (e.target.files[0]) {
