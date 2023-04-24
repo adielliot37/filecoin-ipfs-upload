@@ -1,6 +1,7 @@
 import "./App.css"
 import { Web3Storage } from "web3.storage"
 import { useState } from "react"
+
 //import lighthouse from '@lighthouse-web3/sdk';
 
 export default function App() {
@@ -11,9 +12,10 @@ export default function App() {
   const [cid, setCid] = useState("")
   const [fileSize, setFileSize] = useState(0)
   const [dataLength, setDataLength] = useState(0)
+  const API_KEY = process.env.REACT_APP_API_KEY
 
   const client = new Web3Storage({
-    token: "api",
+    token: API_KEY,
   })
 
   const handleFileChange = (e) => {
